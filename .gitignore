@@ -1,0 +1,3 @@
+# ignore players.txt and token.txt
+*.txt
+!requirements.txt
