@@ -1,10 +1,6 @@
 # Secret Hitler Online Edition
 
-[![N|Python](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
-
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
-Secret Hitler Online Edition is a python script for people who want to play Secret Hitler even in the quarantine. You can now play the game over some video conferencing software such as Discord, Zoom, etc.
+Secret Hitler Online Edition is a python script for people who want to play Secret Hitler even in the quarantine. You can now play the game over some video conferencing capable software such as Discord, Zoom, etc.
 
 Disclaimer: I wrote this in a hurry, so the code is hideous. For the safety of your brain cells, it is recommended not to look at the code.
 
@@ -39,21 +35,23 @@ $ python SecretHitler.py
 #### Step 1
 
 - **Host**
-First, gather players and share your screen. The script will ask you if you want to change players. Saying yes will start the lobby for the players to connect. Wait until all players (including host) to join.
+
+    First, gather players and share your screen. The script will ask you if you want to change players. Saying yes will start the lobby for the players to connect. Wait until all players (including host) to join.
     ```
     Do you want to change players? [Y/n]:y
     Please install Telegram and go to https://t.me/my_bot_name
     Press Enter once everybody joins.
     ```
 - **Players**
-Go to https://t.me/my_bot_name, as seen on the host's screen. The bot will guide you to join. Here are the commands:
-  * `/start`: Displays welcome message.
-  * `/join`&nbsp;&nbsp;: Makes the player enter the game.
 
-  Once someone joins, the host will show that person has connected.
-  ```
-  John has joined the game.
-  ```
+    Go to https://t.me/my_bot_name, as seen on the host's screen. The bot will guide you to join. Here are the commands:
+    * `/start`: Displays welcome message.
+    * `/join`: Makes the player enter the game.
+
+    Once someone joins, the host will show that person has connected.
+    ```
+    John has joined the game.
+    ```
 #### Step 2
 - **Basic game play**
   
@@ -69,20 +67,25 @@ Go to https://t.me/my_bot_name, as seen on the host's screen. The bot will guide
     
 - **Special actions**
     - **Election tracker**
-    The election tracker is there just to mark the progress. Click on any spot to move the coin to the corresponding place. When the coin is at the final spot and hosts click to the first spot, the policy on top of the policy deck will be revealed and enacted.
+        
+        The election tracker is there just to mark the progress. Click on any spot to move the coin to the corresponding place. When the coin is at the final spot and hosts click to the first spot, the policy on top of the policy deck will be revealed and enacted.
 
     - **The president examines top three cards**
-    If there are 5-6 players, the third fascist card has a special ability to make the president examine the top three cards. To invoke this ability, click on the third fascist card when the third fascist policy is enacted while the old president is selected.
+        
+        If there are 5-6 players, the third fascist card has a special ability to make the president examine the top three cards. To invoke this ability, click on the third fascist card when the third fascist policy is enacted while the old president is selected.
     
     - **The president investigates a player's identity card**
-    7-10 player games, there is a special ability to make the president see another player's identity card. To invoke this ability, keep the old president selected, highlight the person to be investigated green (same as selecting as chancellor) then click on the corresponding fascist card when that fascist policy is enacted. This will send the green highlighted person's fascist/liberal status to the old president. 
+        
+        7-10 player games, there is a special ability to make the president see another player's identity card. To invoke this ability, keep the old president selected, highlight the person to be investigated green (same as selecting as chancellor) then click on the corresponding fascist card when that fascist policy is enacted. This will send the green highlighted person's fascist/liberal status to the old president. 
     
     - **Other actions**
-    The other actions, such as selecting the next president or killing a player does not require the game's intervention. The host should deal with those actions himself/herself.
+        
+        The other actions, such as selecting the next president or killing a player does not require the game's intervention. The host should deal with those actions himself/herself.
     
 #### Step 3
 - **Starting a new game or closing the game**
-There is no message when a side wins the game. Please stop playing when the game is over since otherwise, the game crashes, and when the game crashes, telegram bot may stay alive, which would make the game not open again unless the corresponding python process is killed.
+    
+    There is no message when a side wins the game. Please stop playing when the game is over since otherwise, the game crashes, and when the game crashes, telegram bot may stay alive, which would make the game not open again unless the corresponding python process is killed.
 There isn't a button to start a new game, either. Close the game screen and wait for the python process to end. **Don't close the _terminal window_ before the process ends.** Then you can just restart the game and say "no" when asked to change the players.
 
 
