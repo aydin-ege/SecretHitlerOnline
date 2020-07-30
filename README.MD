@@ -1,7 +1,5 @@
 # Secret Hitler Online Edition
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
 Secret Hitler Online Edition is a python script for people who want to play Secret Hitler even in the quarantine. You can now play the game over some video conferencing capable software such as Discord, Zoom, etc.
 
 Disclaimer: I wrote this in a hurry, so the code is hideous. For the safety of your brain cells, it is recommended not to look at the code.
