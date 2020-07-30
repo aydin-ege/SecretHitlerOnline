@@ -46,7 +46,7 @@ First, gather players and share your screen. The script will ask you if you want
 - **Players**
 Go to https://t.me/my_bot_name, as seen on the host's screen. The bot will guide you to join. Here are the commands:
   * `/start`: Displays welcome message.
-  * `/join`&nbsp;&nbsp;: Makes the player enter the game.
+  * `/join`: Makes the player enter the game.
 
   Once someone joins, the host will show that person has connected.
   ```
