@@ -347,25 +347,25 @@ totalHeight = 2 * int(1000 * scale)
 game = GameState()
 player_count = len(game.players)
 
-liberalIMG = pygame.image.load('liberal.png')
+liberalIMG = pygame.image.load('res/liberal.png')
 liberalIMG = pygame.transform.smoothscale(liberalIMG, (int(2816 * scale), int(1000 * scale)))
 
 fascistIMG = None
 if player_count <= 6:
-    fascistIMG = pygame.image.load('fascist56.png')
+    fascistIMG = pygame.image.load('res/fascist56.png')
 elif player_count <= 8:
-    fascistIMG = pygame.image.load('fascist78.png')
+    fascistIMG = pygame.image.load('res/fascist78.png')
 else:
-    fascistIMG = pygame.image.load('fascist910.png')
+    fascistIMG = pygame.image.load('res/fascist910.png')
 fascistIMG = pygame.transform.smoothscale(fascistIMG, (int(2816 * scale), int(1000 * scale)))
 
-drawPileIMG = pygame.image.load('drawpile.png')
+drawPileIMG = pygame.image.load('res/drawpile.png')
 drawPileIMG = pygame.transform.smoothscale(drawPileIMG, (int(496 * scale2), int(696 * scale2)))
 
-discardPileIMG = pygame.image.load('discardpile.png')
+discardPileIMG = pygame.image.load('res/discardpile.png')
 discardPileIMG = pygame.transform.smoothscale(discardPileIMG, (int(496 * scale2), int(696 * scale2)))
 
-cardIMG = pygame.image.load('cards.png')
+cardIMG = pygame.image.load('res/cards.png')
 cardIMG = pygame.transform.smoothscale(cardIMG, (int(394 * scale3), int(549 * scale3)))
 drawCardRect = cardIMG.get_rect()
 discardCardRect = cardIMG.get_rect()
@@ -374,29 +374,29 @@ drawCardRect.y = 424
 discardCardRect.x = 1169
 discardCardRect.y = 424
 
-fascistPolicyIMG = pygame.image.load('fascistPolicy.jpg')
+fascistPolicyIMG = pygame.image.load('res/fascistPolicy.jpg')
 fascistPolicyIMG = pygame.transform.smoothscale(fascistPolicyIMG, (int(340 * scale4), int(489 * scale4)))
 
-liberalPolicyIMG = pygame.image.load('liberalPolicy.jpg')
+liberalPolicyIMG = pygame.image.load('res/liberalPolicy.jpg')
 liberalPolicyIMG = pygame.transform.smoothscale(liberalPolicyIMG, (int(340 * scale4), int(489 * scale4)))
 
-jaNeinIMG = pygame.image.load('ja-nein.png')
+jaNeinIMG = pygame.image.load('res/ja-nein.png')
 jaNeinIMG = pygame.transform.smoothscale(jaNeinIMG, (int(989 * scale5), int(848 * scale5)))
 
 jaNeinRect = jaNeinIMG.get_rect()
 jaNeinRect.x = 1152
 jaNeinRect.y = 95
 
-highlight_yellow = pygame.image.load('highlight-yellow.png')
-highlight_blue = pygame.image.load('highlight-blue.png')
+highlight_yellow = pygame.image.load('res/highlight-yellow.png')
+highlight_blue = pygame.image.load('res/highlight-blue.png')
 
-paraIMG = pygame.image.load('25-Kurus.png')
+paraIMG = pygame.image.load('res/25-Kurus.png')
 paraIMG = pygame.transform.smoothscale(paraIMG, (35, 35))
 paraStates = [(525, 610), (612, 610), (699, 611), (785, 612)]
 paraState = 0
 
 pygame.font.init()
-font = pygame.font.Font('FreeSansBold.ttf', 20)
+font = pygame.font.Font('res/FreeSansBold.ttf', 20)
 
 nameText = []
 for p in game.players:
@@ -427,7 +427,6 @@ theThread = None
 running = True
 
 while running:
-    three_cards_package_only_used_when_the_programmer_is_lazy = None
     mouse_pos = pygame.mouse.get_pos()
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
